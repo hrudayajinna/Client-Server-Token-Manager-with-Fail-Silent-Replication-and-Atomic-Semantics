@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+
+package tokenmgmt;
+
+option go_package = "hrudaya.com/go-tokenmgmt-grpc;go_tokenmgmt_grpc";
+
+service Tkn {
+  rpc CreateNewToken (NewToken) returns (Token) {}
+  rpc GetToekns (Token) returns (Token) {}
+  rpc DropToken (TokenInfo) returns (EmptyToken) {}
+  rpc WriteToken (NewToken) returns (Token) {}
+}
+
+message NewToken {
+  string Name = 1;
+  string Domain = 2;
+  string State = 4;
+  string Id = 3; 
+}
+
+message Token {
+  string Name = 1;
+  string Domain = 2; 
+  string State = 4;
+  string Id = 3; 
+}
+
+message EmptyToken {
+  string message=1;
+}
+
+message TokenList {
+    repeated Token tokens = 1;
+}
+
+message TokenInfo {
+    string Id = 1;
+}
+
+
+

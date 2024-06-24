@@ -1,0 +1,30 @@
+1. Clone the Repository
+git clone https://github.com/yourusername/yourrepository.git
+2. Install Dependencies
+Install Go from the official Go website.
+Install Protocol Buffers compiler (protoc): protoc --go_out=. --go-grpc_out=.token.proto
+
+Install Go dependencies: go mod tidy
+3. Compile and Generate Code from Protobuf
+4. Run the Server -server_script.bat
+5. Run the Client- client_script.bat
+
+
+
+
+ Principles of Distributed Systems:
+Distributed Systems refer to a collection of independent computers that work together as a single system to ensure that tasks are completed efficiently. These systems coordinate their actions by passing messages to one another.
+Client-Server Architecture:
+Client-Server Architecture is a model where multiple clients (users or devices) request and receive services from a centralized server. The server provides resources or services, and the clients use them.
+Concurrent Programming:
+Concurrent Programming involves designing programs that can execute multiple tasks simultaneously, making efficient use of system resources like CPU and memory.
+Modern Frameworks (gRPC and Protocol Buffers):
+gRPC is a high-performance, open-source framework for making remote procedure calls (RPC). It allows a client application to call methods on a server application as if it were a local object.
+Protocol Buffers (Protobuf) is a method developed by Google for serializing structured data. It is useful in communication protocols, data storage, and more.
+Building and Managing a Scalable and Efficient Token Management System:
+Scalable System: A system that can handle increasing amounts of work by adding resources (e.g., more servers).
+Efficient System: A system that maximizes performance while minimizing resource usage.
+Token Management System: A system that manages the creation, updating, reading, and deletion of tokens, which are data structures with specific properties.
+
+
+
